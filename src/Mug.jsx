@@ -1,6 +1,6 @@
 import React from 'react';
 
-const imageFiles = require.context('./images/MugSequence', false, /\.(png|jpe?g|svg)$/);
+const imageFiles = require.context('./images/SmallerMugSequence', false, /\.(png|jpe?g|svg)$/);
 
 export default class Mug extends React.Component {
     constructor(props) {

@@ -1,8 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import MenuItemContent from './MenuItemContent'
+import Header from './Header'
 import Home from './Home'
 import Mug from'./Mug'
+
 import './styles/index.css';
 
 const MENUITEMS = [
@@ -26,7 +28,7 @@ const MENUITEMS = [
 
 ReactDOM.render(
   <React.StrictMode>
-    <Mug/>
+    <Header/>
     <Home/>
   </React.StrictMode>,
   document.getElementById('root')
