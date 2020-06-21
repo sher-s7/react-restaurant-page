@@ -1,21 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
-
 * {
   box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
 }
 
 body {
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Kashima', sans-serif;
+  font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Kashima', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size: 1.6rem;
   background-color: #131313;
   color: #e3e3e3;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+ul, li {
+  padding: 0;
+  margin: 0;
 }
 
 /* Slideshow */
@@ -48,34 +53,119 @@ code {
   background: #ffffff52;
 }
 
+/* Header */
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+header {
+  display: flex;
+  align-items: center;
+  background-color: #060606;
+}
+
+#mug-div {
+  display: inline-block;
+  text-align: center;
+}
+
+#title {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: lighter;
+  background: -webkit-linear-gradient(#525252, white, white);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Tabs */
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+#tablist {
+  display: flex;
+  list-style: none;
+  cursor: default;
+  background-color: #060606;
+}
+
+#tablist li {
+  width: 100%;
+  text-align: center;
+  font-size: 1.2rem;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  transition: 0.1s ease;
+}
+
+#tablist li:active {
+  background-color: #2e2e2e;
+}
+
+#tablist li:first-child {
+  border-top-left-radius: 0;
+}
+
+#tablist li:last-child {
+  border-top-right-radius: 0;
+}
+
+#current-tab {
+  background-color: #131313;
+}
+
+#home, #menu, #about, #contact {
+  padding: 25px;
+}
+
 /* Home */
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
-#home-title {
-  text-align: center;
-font-family: 'Open Sans', sans-serif;
-font-weight: lighter;
-margin-top: 65px;
-background: -webkit-linear-gradient(#525252, white, white);
-    background-clip: border-box;
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-}
-
-#home-message{
+#home-message {
   font-family: 'Open Sans', sans-serif;
   font-weight: bold;
   font-size: 45px;
+  margin: 0;
 }
 
-#teacup {
-  max-width: 100px;
+/* Footer */
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+footer {
   position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-47%);
-  z-index: 2;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #060606;
+}
+
+footer button {
+  padding-left: 0;
+}
+
+footer h3 {
+  margin-bottom: 0px;
+}
+
+footer h3, footer ul {
+  margin-left: 10%;
+}
+
+footer ul {
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+footer ul li {
+  display: block;
+}
+
+footer ul li button {
+  color: #e3e3e3;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
 
 /* Media Queries */
@@ -83,10 +173,20 @@ background: -webkit-linear-gradient(#525252, white, white);
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
 @media (min-width: 768px) {
-  .carousel-root {
-    width: 100%;
+  #tablist li:hover {
+    background-color: #202020;
+    transition: 0.2s ease;
   }
-  .control-dots {
-    display: initial;
+  #home, #menu, #about, #contact {
+    position: relative;
+    z-index: 2;
+    background-color: #131313;
+  }
+  #current-tab {
+    box-shadow: 0px 5px 10px black;
+    z-index: 1;
+  }
+  #current-tab:hover {
+    background-color: #131313 !important;
   }
 }

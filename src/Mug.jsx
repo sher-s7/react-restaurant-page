@@ -1,45 +1,42 @@
 import React from 'react';
-
-const imageFiles = require.context('./images/SmallerMugSequence', false, /\.(png|jpe?g|svg)$/);
-
+import SpriteAnimator from 'react-sprite-animator'
+import MugSprites from './images/mugspritesheet.png'
 export default class Mug extends React.Component {
-    constructor(props) {
-        super(props)
-        this.state = {
-            currentImageIndex: 0,
-            images: imageFiles.keys().map(imageFiles),
-            timer: undefined
-        };
-
+    constructor(props){
+        super(props);
+        this.state={
+            mouseOn: false
+        }
     }
 
-    startSequence = () => {
-
-
-        let newIndex = this.state.currentImageIndex < this.state.images.length - 1 ?
-            this.state.currentImageIndex + 1 : 0;
-        this.setState({ currentImageIndex: newIndex });
-        console.log(this.state.currentImageIndex)
-
-        if (!this.state.timer) {
-            this.setState({ timer: setInterval(this.startSequence, 1000/60) })
-        }
-
+    startAnimation = () => {
+        this.setState({mouseOn: true})
     }
 
-    kill = () => {
-        if(this.state.timer) {
-            clearInterval(this.state.timer);
-            this.setState({timer: undefined});
-        }
+    stopAnimation = () => {
+        this.setState({mouseOn: false})
+        console.log(this.state.mouseOn)
     }
 
     render() {
         return (
-            <img id='teacup' src={this.state.images[this.state.currentImageIndex]} alt="teacup"
-                onMouseEnter={this.startSequence}
-                onMouseLeave={this.kill}
-            />
+            <div id='mug-div'
+            onMouseEnter={this.startAnimation}
+            onMouseLeave={this.stopAnimation}
+            >
+                <SpriteAnimator
+                    width={100}
+                    height={100}
+                    sprite={MugSprites}
+                    fps={60}
+                    startFrame={0}
+                    stopLastFrame={false}
+                    frameCount={120}
+                    wrapAfter={11}
+                    direction={'horizontal'}
+                    shouldAnimate={this.state.mouseOn}
+                />
+            </div>
         );
     }
 }
