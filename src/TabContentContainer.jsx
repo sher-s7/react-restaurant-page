@@ -32,16 +32,16 @@ export default class TabContentContainer extends React.Component {
         return (
             <div>
                 <ul id='tablist'>
-                    <li 
+                    <li className='tab'
                     id={this.state.currentTab === 0 ? 'current-tab' : null} 
                     onClick={() => this.handleClick('home')}><h2>Home</h2></li>
-                    <li 
+                    <li className='tab'
                     id={this.state.currentTab === 1 ? 'current-tab' : null}
                     onClick={() => this.handleClick('menu')}><h2>Menu</h2></li>
-                    <li 
+                    <li className='tab'
                     id={this.state.currentTab === 2 ? 'current-tab' : null}
                     onClick={() => this.handleClick('about')}><h2>About</h2></li>
-                    <li 
+                    <li className='tab'
                     id={this.state.currentTab === 3 ? 'current-tab' : null}
                     onClick={() => this.handleClick('contact')}><h2>Contact</h2></li>
                 </ul>

@@ -5,7 +5,7 @@ export default class Header extends React.Component {
         return (
             <header>
                 <Mug/>
-                <h1 id='title'>TEATIME</h1>
+                <h1 id='title'>TEA TIME</h1>
             </header>
         );
     }
