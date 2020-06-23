@@ -83,9 +83,10 @@ header {
   transition: 0.1s ease;
 }
 
-#tablist li:active {
+#tablist li:active{
   background-color: #2e2e2e;
 }
+
 
 #tablist li:first-child {
   border-top-left-radius: 0;
@@ -152,6 +153,16 @@ header {
   font-family: 'Tangerine', serif;
   font-weight: 700;
   font-size: 2.5rem;
+}
+
+/* About */
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+#organic {
+  /* width: 60px; */
+  display: block;
+  margin: 0 auto;
 }
 
 /* Footer */
