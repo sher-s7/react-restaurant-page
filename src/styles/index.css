@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap');
 
 * {
   box-sizing: border-box;
@@ -26,7 +27,7 @@ body {
 }
 
 .contentContainer {
-  padding-bottom: 57px;
+  padding-bottom: 145px;
 }
 
 ul, li {
@@ -56,7 +57,7 @@ header {
   font-weight: 400;
   font-size: 3.5rem;
   margin-top: 35px;
-  background: -webkit-linear-gradient(#868686, white, white);
+  background: -webkit-linear-gradient(#969595, white, white);
   background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -76,7 +77,7 @@ header {
 #tablist li {
   width: 100%;
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 0.95rem;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   transition: 0.1s ease;
@@ -111,10 +112,46 @@ header {
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
 #home-message {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: bold;
-  font-size: 45px;
-  margin: 0;
+  font-family: 'Josefin Sans', serif;
+  font-size: 2rem;
+  width: 95%;
+  text-align: justify;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+#home blockquote {
+  text-align: center;
+}
+
+#teabanner {
+  /* background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(19, 19, 19) 100%), 
+  
+  linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(19, 19, 19) 100%), 
+  
+  linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(19, 19, 19) 100%), 
+  
+  linear-gradient(to left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(19, 19, 19) 100%),
+  
+  url(../images/slideshow/1tea.jpg), no-repeat; */
+
+  background: url(../images/slideshow/1tea_feathered.png);
+
+  height: 0;
+  padding-top: 28.125%;
+  background-size: 100%;
+}
+
+#teacup-leaf {
+  width: 100px;
+  display: block;
+  margin: 0 auto;
+}
+
+.citation {
+  font-family: 'Tangerine', serif;
+  font-weight: 700;
+  font-size: 2.5rem;
 }
 
 /* Footer */
@@ -127,7 +164,7 @@ footer {
   bottom: 0;
   right: 0;
   width: 100%;
-  height: 57px;
+  height: 145px;
   background-color: #060606;
   display: flex;
   justify-content: space-between;
@@ -199,6 +236,19 @@ footer ul li span:hover {
 }
 
 @media (min-width: 768px) {
+
+  .contentContainer {
+    padding-bottom: 54px;
+  }
+
+  /* Tabs */
+
+  /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+  #tablist li {
+    font-size: 1.2rem;
+  }
+
   #tablist li:hover {
     background-color: #202020;
     transition: 0.2s ease;
@@ -216,9 +266,30 @@ footer ul li span:hover {
     background-color: #131313 !important;
   }
 
+  /* Home */
+
+  /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+  #home blockquote {
+    width: 400px;
+    margin: 0 auto;
+  }
+
+  #home-message {
+    width: 45%;
+  }
+
+  #teacup-leaf {
+    width: 200px;
+  }
+
   /* Footer */
 
   /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+  footer {
+    height: 54px;
+  }
 
   footer ul li {
     display: inline-block;
