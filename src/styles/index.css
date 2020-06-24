@@ -174,7 +174,7 @@ header {
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
 #contact h3 {
-  width: 295px;
+  width: 80vw;
   font-weight: 400;
   margin: 0 auto;
 }
@@ -189,7 +189,7 @@ header {
   position: relative;
   margin: 0 auto;
   margin-bottom: 40px;
-  width: 300px;
+  width: 80vw;
 }
 
 .form-element input, .form-element textarea {
@@ -369,6 +369,14 @@ footer ul li span:hover {
   /* Contact */
 
   /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+  #contact h3 {
+    width: 50vw;
+  }
+
+  .form-element {
+    width: 50vw;
+  }
 
   #submit:hover {
     background-color: #e3e3e3;

@@ -4,7 +4,7 @@ export default class Contact extends React.Component {
     render() {
         return (
             <div id='contact'>
-                <h3>Send us your comments, questions, or concerns:</h3>
+                <h3>Send us your questions, comments, or concerns:</h3>
                 <form id='contact-form'>
 
                     <div className='form-element'>
