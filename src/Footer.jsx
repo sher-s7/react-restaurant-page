@@ -1,24 +1,21 @@
 import React from 'react';
-import Home from './Home'
-// import Menu from './Menu'
-// import About from './About'
-// import Contact from './Contact'
-
 import GithubLogo from './images/github-logos/GitHub-Mark-Light-120px-plus.png'
 
 export default class Footer extends React.Component {
     handleClick(page) {
-        
+        if(page === 'home') {
+
+        }
     }
     render() {
         return (
             <footer>
                 <ul>
                     <li><h3>TEATIME</h3></li>
-                    <li><span onClick={() => this.handleClick('home')}>Home</span></li>
-                    <li><span onClick={() => this.handleClick('menu')}>Menu</span></li>
-                    <li><span onClick={() => this.handleClick('about')}>About</span></li>
-                    <li><span onClick={() => this.handleClick('contact')}>Contact</span></li>
+                    <li><button onClick={() => this.props.handleClick('home')}>Home</button></li>
+                    <li><button onClick={() => this.props.handleClick('menu')}>Menu</button></li>
+                    <li><button onClick={() => this.props.handleClick('about')}>About</button></li>
+                    <li><button onClick={() => this.props.handleClick('contact')}>Contact</button></li>
                 </ul>
                 <div className='createdby'>
                     <span>Created by Sher Sheikh</span>

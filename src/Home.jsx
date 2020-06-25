@@ -1,5 +1,5 @@
 import React from 'react';
-import TeaCup from './images/teacup.svg'
+import Mug from './Mug'
 
 export default class Home extends React.Component {
     render() {
@@ -10,13 +10,16 @@ export default class Home extends React.Component {
                     <p className='citation'>—Lin Yutang, <cite>The Importance of Living</cite></p>
                 </blockquote>
 
-                <div className='parallax-container'><div className='parallax' id='teabanner' alt="loose-leaf-tea" /></div>
+                {/* <div className='parallax-container'><div className='parallax' id='teabanner' alt="loose-leaf-tea" /></div> */}
+                <Mug />
 
 
                 <p id='home-message'><span className='teatime'>TEATIME</span> provides a relaxing, welcoming atmosphere
-                with with organic loose leaf teas, tasty appetizers, and friendly service.
-                    Your go-to place to unwind, and enjoy a freshly brewed cup of tea. </p>
-                <img className='icon' src={TeaCup} alt="teapot.png" />
+                with with organic teas, tasty appetizers, and friendly service.
+                    Your go-to place to unwind, and enjoy a freshly brewed cup of tea.
+                    </p>
+
+                    <button onClick={() => this.props.handleMenuButton('menu')} id='view-menu'><div>VIEW MENU</div></button>
             </div>
         );
     }
