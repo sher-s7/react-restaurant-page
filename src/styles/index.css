@@ -184,7 +184,7 @@ header {
   background: #131313;
   box-shadow: inset 1px 1px 10px black;
   transition: 0.2s;
-  font-family: 'Josefin Sans';
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 #view-menu:hover {
@@ -202,6 +202,32 @@ header {
 #view-menu:active {
   font-size: 1.95rem;
   box-shadow: inset 1px 1px 30px black;
+}
+
+/* Menu */
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+.menu-category {
+  font-size: 3rem;
+  text-decoration: underline;
+}
+
+.menu-type {
+  font-size: 2rem;
+}
+
+.menu-item-image {
+  width: 200px;
+  height: 200px;
+}
+
+.menu-item-row table {
+
+}
+
+#tea-desc-credits {
+  font-family: 'Open Sans', sans-serif;
 }
 
 /* About */
@@ -310,7 +336,7 @@ header {
 #contact-list {
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: flex-start;
   list-style: none;
   margin-top: 50px;
 }

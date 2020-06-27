@@ -7,11 +7,17 @@ export default class MenuItemContent extends React.Component {
         const img = this.props.img;
 
         return (
-            <tr>
-                <td><img src={img} alt={name}/></td>
-                <td>{name}</td>
-                <td>{description}</td>
-                <td>{price}</td>
+            <tr className='menu-item-row'>
+                <table>
+                    <tr>
+                        <td className='menu-item-name'>{name}</td>
+                        <td className='menu-item-image'><img src={img} alt='alt' /></td>
+                    </tr>
+                    <tr>
+                        <td className='menu-item-desc'>{description}</td>
+                        <td className='menu-item-price'>{price}</td>
+                    </tr>
+                </table>
             </tr>
         );
     }

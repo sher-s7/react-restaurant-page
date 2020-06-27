@@ -24,7 +24,7 @@ export default class App extends React.Component {
         if(page === 'home') {
             this.setState({content: <Home handleMenuButton = {this.handleTabs}/>, currentTab: 0})
         } else if(page === 'menu') {
-            this.setState({content: <Menu/>, currentTab: 1})
+            this.setState({content: <Menu menuItems={this.props.menuItems}/>, currentTab: 1})
         }else if(page === 'about'){
             this.setState({content: <About/>, currentTab: 2})
         }else if(page === 'contact') {
