@@ -21,37 +21,6 @@ import Shincha from './images/menu_images/shincha.jpg';
 import Uramaki from './images/menu_images/uramaki.jpg';
 
 
-// const menu_items = {
-//   Tea: {
-//     Green: [
-//       { price: '$1.79', description: "Sencha, or loose leaf green tea, is the most popular kind of tea in Japan. Unlike matcha, sencha is made from tea plants grown in full sun, which gives the tea a darker color and more astringent flavor.", name: 'Sencha', img: '' },
-//       { price: '$1.79', description: "Matcha is a specific type of green tea made from the leaves of tea plants that have been grown under shade. This causes the tea leaves to grow larger and finer and to produce more chlorophyll, which gives matcha tea its bright green color and subtly sweet and bitter flavor.", name: 'Matcha', img: '' },
-//       { price: '$1.79', description: "Genmaicha is made from green tea mixed with roasted rice. The additional nutty, roasted flavor of the rice reduced the bitterness of the green tea.", name: 'Genmaicha', img: '' },
-//       { price: '$1.79', description: "Shincha, literally \"new tea\" is the first harvest (first flush) of a Japanese green tea. It is distinguished by its fresh flavor and sweetness.", name: 'Shincha', img: '' },
-//     ],
-//     Black: [
-//       { price: '$1.49', description: "A light and fruity blend with oil of bergamot and tangerine, great on its own or with a splash of milk and sugar.", name: 'Earl Grey', img: '' },
-//       { price: '$1.49', description: "A medium-strength tea with delicious hints of dark honey and malted grain that will satisfy your every mood, whether you sip it on its own or with a splash of milk.", name: 'Orange Pekoe', img: '' },
-//       { price: '$1.49', description: "From its fruity notes of ripe plum and apricot to its pleasant astringency and delicate floral finish, this premium black tea will make just about any tea lover smile.", name: 'Darjeeling', img: '' },
-//     ],
-//     Oolong: [
-//       { price: '$1.99', description: "This luxurious oolong will have you falling hard for its natural fragrant lychee and plum notes.", name: 'Oolong', img: '' },
-//     ]
-//   },
-
-//   Noodles: [
-//     { price: '$7.99', name: 'Ramen', img: '' },
-//   { price: '$7.99', name: 'Okinawa Soba', img: '' },
-//   { price: '$7.99', name: 'Champon', img: '' },
-//   ],
-
-//   Sushi: [
-//     { price: '$6.99', name: 'California roll', img: '' },
-//     { price: '$6.99', name: 'Uramaki', img: '' },
-//     { price: '$6.99', name: 'Makizushi', img: '' },
-//   ]
-// }
-
 const MENUITEMS = [
   { category: 'Tea', type: 'Green', price: '$1.79', description: "Sencha, or loose leaf green tea, is the most popular kind of tea in Japan. Unlike matcha, sencha is made from tea plants grown in full sun, which gives the tea a darker color and more astringent flavor.", name: 'Sencha', img: Sencha},
   { category: 'Tea', type: 'Green', price: '$1.79', description: "Matcha is a specific type of green tea made from the leaves of tea plants that have been grown under shade. This causes the tea leaves to grow larger and finer and to produce more chlorophyll, which gives matcha tea its bright green color and subtly sweet and bitter flavor.", name: 'Matcha', img: Matcha },
@@ -61,12 +30,12 @@ const MENUITEMS = [
   { category: 'Tea', type: 'Black', price: '$1.49', description: "A medium-strength tea with delicious hints of dark honey and malted grain that will satisfy your every mood, whether you sip it on its own or with a splash of milk.", name: 'Orange Pekoe', img: OrangePekoe },
   { category: 'Tea', type: 'Black', price: '$1.49', description: "From its fruity notes of ripe plum and apricot to its pleasant astringency and delicate floral finish, this premium black tea will make just about any tea lover smile.", name: 'Darjeeling', img: Darjeeling },
   { category: 'Tea', type: 'Oolong', price: '$1.99', description: "This luxurious oolong will have you falling hard for its natural fragrant lychee and plum notes.", name: 'Oolong', img: Oolong },
-  { category: 'Appetizers', type: 'Noodles', price: '$7.99', name: 'Ramen', img: Ramen },
-  { category: 'Appetizers', type: 'Noodles', price: '$7.99', name: 'Okinawa Soba', img: OkinawaSoba },
-  { category: 'Appetizers', type: 'Noodles', price: '$7.99', name: 'Champon', img: Champon },
-  { category: 'Appetizers', type: 'Sushi', price: '$6.99', name: 'California roll', img: CaliforniaRoll },
-  { category: 'Appetizers', type: 'Sushi', price: '$6.99', name: 'Uramaki', img: Uramaki },
-  { category: 'Appetizers', type: 'Sushi', price: '$6.99', name: 'Makizushi', img: Makizushi },
+  { category: 'Appetizers', type: 'Noodles', price: '$7.99', description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisi lacus sed viverra tellus in hac habitasse platea. Tortor consequat id porta nibh venenatis cras sed. Ornare massa eget egestas purus viverra accumsan in. Vehicula ipsum a arcu cursus vitae.", name: 'Ramen', img: Ramen },
+  { category: 'Appetizers', type: 'Noodles', price: '$7.99', description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisi lacus sed viverra tellus in hac habitasse platea. Tortor consequat id porta nibh venenatis cras sed. Ornare massa eget egestas purus viverra accumsan in. Vehicula ipsum a arcu cursus vitae.", name: 'Okinawa Soba', img: OkinawaSoba },
+  { category: 'Appetizers', type: 'Noodles', price: '$7.99', description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisi lacus sed viverra tellus in hac habitasse platea. Tortor consequat id porta nibh venenatis cras sed. Ornare massa eget egestas purus viverra accumsan in. Vehicula ipsum a arcu cursus vitae.", name: 'Champon', img: Champon },
+  { category: 'Appetizers', type: 'Sushi', price: '$6.99', description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisi lacus sed viverra tellus in hac habitasse platea. Tortor consequat id porta nibh venenatis cras sed. Ornare massa eget egestas purus viverra accumsan in. Vehicula ipsum a arcu cursus vitae.", name: 'California roll', img: CaliforniaRoll },
+  { category: 'Appetizers', type: 'Sushi', price: '$6.99', description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisi lacus sed viverra tellus in hac habitasse platea. Tortor consequat id porta nibh venenatis cras sed. Ornare massa eget egestas purus viverra accumsan in. Vehicula ipsum a arcu cursus vitae.", name: 'Uramaki', img: Uramaki },
+  { category: 'Appetizers', type: 'Sushi', price: '$6.99', description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisi lacus sed viverra tellus in hac habitasse platea. Tortor consequat id porta nibh venenatis cras sed. Ornare massa eget egestas purus viverra accumsan in. Vehicula ipsum a arcu cursus vitae.", name: 'Makizushi', img: Makizushi },
 ];
 
 

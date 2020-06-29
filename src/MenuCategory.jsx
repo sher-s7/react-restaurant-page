@@ -1,13 +1,15 @@
 import React from 'react';
 export default class MenuCategory extends React.Component {
     render() {
-        const type = this.props.type ? <th>{this.props.type}</th> : null;
-        const category = this.props.category ? <th>{this.props.category}</th> : null;
+        const type = this.props.type ? <div className='menu-type'>{this.props.type}</div> : null;
+        const category = this.props.category ? <div className='menu-category'>{this.props.category}</div> : null;
 
         return (
             <tr>
-                <div className='menu-category'>{category}</div>
-                <div className='menu-type'>{type}</div>
+                <th>
+                    {category}
+                    {type}
+                </th>
             </tr>
         );
     }

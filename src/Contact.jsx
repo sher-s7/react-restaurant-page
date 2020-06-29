@@ -3,11 +3,29 @@ import Phone from './images/phone.png'
 import Location from './images/location.png'
 
 export default class Contact extends React.Component {
+
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            submitMessageOpacity: 0,
+        }
+
+        this.handleSubmit = this.handleSubmit.bind(this)
+    }
+
+    handleSubmit = (e) => {
+        this.setState({submitMessageOpacity: 1});
+        e.preventDefault();
+        e.target.reset();
+    }
+
     render() {
         return (
             <div id='contact'>
                 <h3>Send us your questions, comments, or concerns:</h3>
-                <form id='contact-form'>
+                <p style={{opacity: this.state.submitMessageOpacity, transition: '0.5s'}} id='form-submit-message'>Thank you for getting in touch.</p>
+                <form onSubmit={this.handleSubmit} id='contact-form'>
 
                     <div className='form-element'>
                         <label htmlFor="name">NAME</label>

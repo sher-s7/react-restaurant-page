@@ -8,17 +8,21 @@ export default class MenuItemContent extends React.Component {
 
         return (
             <tr className='menu-item-row'>
-                <table>
-                    <tr>
-                        <td className='menu-item-name'>{name}</td>
-                        <td className='menu-item-image'><img src={img} alt='alt' /></td>
-                    </tr>
-                    <tr>
-                        <td className='menu-item-desc'>{description}</td>
-                        <td className='menu-item-price'>{price}</td>
-                    </tr>
-                </table>
+                <td className='menu-item-container' colSpan={'100%'}>
+                    <div className='smallscreen menu-image-name-container'>
+                        <img className='menu-item-image' src={img} alt='alt' />
+                        <div className='menu-item-name'>{name}</div>
+                    </div>
+
+                    <div className='widescreen menu-item-name'>{name}</div>
+                    <div className='menu-item-desc'>{description}</div>
+                    <div className='menu-item-price'>{price}</div>
+                    <div className='image-container'>
+                        <img className='widescreen menu-item-image' src={img} alt='alt' />
+                    </div>
+                </td>
             </tr>
+
         );
     }
 }

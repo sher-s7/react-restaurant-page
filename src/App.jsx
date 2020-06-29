@@ -21,6 +21,8 @@ export default class App extends React.Component {
     }
 
     handleTabs = (page) => {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
         if(page === 'home') {
             this.setState({content: <Home handleMenuButton = {this.handleTabs}/>, currentTab: 0})
         } else if(page === 'menu') {
