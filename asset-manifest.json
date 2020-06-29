@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/react-restaurant-page/static/css/main.895f6ade.chunk.css",
+    "main.css": "/react-restaurant-page/static/css/main.9e0db9eb.chunk.css",
     "main.js": "/react-restaurant-page/static/js/main.c6bdf1a4.chunk.js",
     "main.js.map": "/react-restaurant-page/static/js/main.c6bdf1a4.chunk.js.map",
     "runtime-main.js": "/react-restaurant-page/static/js/runtime-main.59b9a8e5.js",
@@ -8,9 +8,9 @@
     "static/js/2.85ea4869.chunk.js": "/react-restaurant-page/static/js/2.85ea4869.chunk.js",
     "static/js/2.85ea4869.chunk.js.map": "/react-restaurant-page/static/js/2.85ea4869.chunk.js.map",
     "index.html": "/react-restaurant-page/index.html",
-    "precache-manifest.8bdc542a58bfe9b62afd2bc752fc748b.js": "/react-restaurant-page/precache-manifest.8bdc542a58bfe9b62afd2bc752fc748b.js",
+    "precache-manifest.392a0c7b40489a7b080882a26e634711.js": "/react-restaurant-page/precache-manifest.392a0c7b40489a7b080882a26e634711.js",
     "service-worker.js": "/react-restaurant-page/service-worker.js",
-    "static/css/main.895f6ade.chunk.css.map": "/react-restaurant-page/static/css/main.895f6ade.chunk.css.map",
+    "static/css/main.9e0db9eb.chunk.css.map": "/react-restaurant-page/static/css/main.9e0db9eb.chunk.css.map",
     "static/js/2.85ea4869.chunk.js.LICENSE.txt": "/react-restaurant-page/static/js/2.85ea4869.chunk.js.LICENSE.txt",
     "static/media/californiaroll.jpg": "/react-restaurant-page/static/media/californiaroll.93cb5f69.jpg",
     "static/media/champon.jpg": "/react-restaurant-page/static/media/champon.48dbd8e7.jpg",
@@ -34,7 +34,7 @@
   "entrypoints": [
     "static/js/runtime-main.59b9a8e5.js",
     "static/js/2.85ea4869.chunk.js",
-    "static/css/main.895f6ade.chunk.css",
+    "static/css/main.9e0db9eb.chunk.css",
     "static/js/main.c6bdf1a4.chunk.js"
   ]
 }
