@@ -631,7 +631,6 @@ footer ul li button:hover {
     grid-column-start: 2;
     grid-row-start: 1;
     grid-row-end: 4;
-    height: 100%;
   }
   .menu-item-image {
     height: 100%;
