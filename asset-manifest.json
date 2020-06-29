@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/restaurant-site/static/css/main.895f6ade.chunk.css",
+    "main.js": "/restaurant-site/static/js/main.c6bdf1a4.chunk.js",
+    "main.js.map": "/restaurant-site/static/js/main.c6bdf1a4.chunk.js.map",
+    "runtime-main.js": "/restaurant-site/static/js/runtime-main.3f4ff714.js",
+    "runtime-main.js.map": "/restaurant-site/static/js/runtime-main.3f4ff714.js.map",
+    "static/js/2.85ea4869.chunk.js": "/restaurant-site/static/js/2.85ea4869.chunk.js",
+    "static/js/2.85ea4869.chunk.js.map": "/restaurant-site/static/js/2.85ea4869.chunk.js.map",
+    "index.html": "/restaurant-site/index.html",
+    "precache-manifest.89ea9665e2125fdfb2e9d05b12808b3f.js": "/restaurant-site/precache-manifest.89ea9665e2125fdfb2e9d05b12808b3f.js",
+    "service-worker.js": "/restaurant-site/service-worker.js",
+    "static/css/main.895f6ade.chunk.css.map": "/restaurant-site/static/css/main.895f6ade.chunk.css.map",
+    "static/js/2.85ea4869.chunk.js.LICENSE.txt": "/restaurant-site/static/js/2.85ea4869.chunk.js.LICENSE.txt",
+    "static/media/californiaroll.jpg": "/restaurant-site/static/media/californiaroll.93cb5f69.jpg",
+    "static/media/champon.jpg": "/restaurant-site/static/media/champon.48dbd8e7.jpg",
+    "static/media/darjeeling.jpg": "/restaurant-site/static/media/darjeeling.ea6e50ab.jpg",
+    "static/media/earlgrey.jpg": "/restaurant-site/static/media/earlgrey.ddc02bc8.jpg",
+    "static/media/genmaicha.jpg": "/restaurant-site/static/media/genmaicha.5e44baf5.jpg",
+    "static/media/location.png": "/restaurant-site/static/media/location.c04154d9.png",
+    "static/media/makizushi.jpg": "/restaurant-site/static/media/makizushi.e273e3e9.jpg",
+    "static/media/matcha.jpg": "/restaurant-site/static/media/matcha.f7c85f1c.jpg",
+    "static/media/mugspritesheet.png": "/restaurant-site/static/media/mugspritesheet.d21db791.png",
+    "static/media/okinawasoba.jpg": "/restaurant-site/static/media/okinawasoba.a326a564.jpg",
+    "static/media/oolong.jpg": "/restaurant-site/static/media/oolong.260fcd95.jpg",
+    "static/media/orangepekoe.jpg": "/restaurant-site/static/media/orangepekoe.7e59bfab.jpg",
+    "static/media/phone.png": "/restaurant-site/static/media/phone.98988687.png",
+    "static/media/plant.svg": "/restaurant-site/static/media/plant.4d74cb7f.svg",
+    "static/media/ramen.jpg": "/restaurant-site/static/media/ramen.8d87dee2.jpg",
+    "static/media/sencha.jpg": "/restaurant-site/static/media/sencha.a64f7333.jpg",
+    "static/media/shincha.jpg": "/restaurant-site/static/media/shincha.68836736.jpg",
+    "static/media/uramaki.jpg": "/restaurant-site/static/media/uramaki.17412394.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3f4ff714.js",
+    "static/js/2.85ea4869.chunk.js",
+    "static/css/main.895f6ade.chunk.css",
+    "static/js/main.c6bdf1a4.chunk.js"
+  ]
+}
