@@ -1,3 +1,9 @@
-# Example Restaurant Website
+# TeaTime - example restaurant
+A restaurant page created using React
 
-An example of a website for a restaurant made using [React](https://github.com/facebook/react/)
+### Mobile Responsive
+![mobileresponsive.gif](readme/mobileresponsive.gif)
+
+
+### Keyboard Accessibility
+![accessibility.gif](readme/accessibility.gif)
