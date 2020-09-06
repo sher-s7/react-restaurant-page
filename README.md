@@ -1,4 +1,4 @@
-# TeaTime
+# Tea Time
 A sample restaurant page created using React
 
 View live [demo](https://sher-s7.github.io/react-restaurant-page/)
