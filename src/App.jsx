@@ -39,7 +39,7 @@ export default class App extends React.Component {
             <div>
                 <Header />
                 <TabContentContainer content={this.state.content} currentTab = {this.state.currentTab} handleClick = {this.handleTabs} />
-                <Footer content={this.state.content} currentTab = {this.state.currentTab} handleClick = {this.handleTabs}/>
+                <Footer handleClick = {this.handleTabs}/>
             </div>
         )
     }

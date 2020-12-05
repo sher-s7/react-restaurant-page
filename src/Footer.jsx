@@ -2,11 +2,7 @@ import React from 'react';
 import GithubLogo from './images/github-logos/GitHub-Mark-Light-120px-plus.png'
 
 export default class Footer extends React.Component {
-    handleClick(page) {
-        if(page === 'home') {
 
-        }
-    }
     render() {
         return (
             <footer>
